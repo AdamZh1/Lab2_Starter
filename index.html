@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSE 110 Meeting Notes</title>
+    <meta name="description" content="Notes for CSE 110 Meeting" />
+    <link rel="icon" type="image/png" href="https://img.icons8.com/color/48/teamwork--v1.png">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>
+          CSE 110 Meeting Notes - Bug Fixes and Check ins - Notes App Project
+        </h1>
+        <h2>4/9/26 Meeting</h2>
+        <h3>Participants: Adam Zhou, Name1, Name2</h3>
+        <a
+          target="_blank"
+          href="https://app.slack.com/client/T0APRHS2C8G/C0ANQTXS0SX"
+          >Link to Slack group</a
+        >
+        <p>
+          This is the <b>3rd</b> meeting, and the focus will be discussing
+          <b>progress made and bug fixes.</b>
+        </p>
+
+        <nav>
+          <a href="#Assignments">Last Meeting Assignments</a>
+          <br />
+          <a href="#Current-Objectives">Current Meeting Objectives</a>
+        </nav>
+        <br />
+        <b>Notes App Focus Diagram</b><br />
+        <img
+          src="notesdiagram.png"
+          alt="notes app diagram"
+          width="500"
+          height="500"
+        />
+      </header>
+      <hr />
+      <h3>Last Meeting Recap:</h3>
+      <p><strong>Reported bugs:</strong></p>
+      <ul>
+        <li>Login Form Disappears</li>
+        <li>Volume Slider Doesn't Work</li>
+        <li>Occasionally not able to see other people's notes</li>
+      </ul>
+      <div id="Assignments">
+        <em>Adam</em> was assigned to fix the login form
+        <br />
+        <em>Name1</em> was assigned to volume slider
+        <p>
+          No one was assigned to fix not being able to see other people's notes
+        </p>
+      </div>
+      <hr />
+      <div id="Current-Objectives">
+        <h3>Current Meeting Objectives</h3>
+        <section>
+          <p>
+            Progress has been made in fixing the bugs and towards completion of
+            the project. We are starting the implementation of being able to
+            show hand written notes. Our current concern is making the deadline.
+            Adam will work with one other person to implement the hand written
+            notes.
+          </p>
+        </section>
+        <p>All previous bugs <i>fixed</i> except login bug</p>
+        <p><strong>Order of importance:</strong></p>
+        <ol>
+          <li>Continue Fixing Login</li>
+          <li>Implement being able to show hand written notes</li>
+          <li>Come up with possible logo</li>
+        </ol>
+      </div>
+      <p><span>Next meeting on 4/14/26</span></p>
+      <details>
+        <summary>Next Meeting Objectives</summary>
+        <p>
+          Next meeting will cover next steps and deployment, as well as
+          assigning roles for these tasks
+        </p>
+      </details>
+      Next Meeting Place: <br>
+      <video width="320" height="240" controls>
+        <source src="MeetingPlace.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video> <br>
+      Sample Lecture Audio: <br>
+      <audio controls> 
+        <source src="lectureAudio.m4a" type="audio/mp4">
+        Your browser does not support the audio tag.
+      </audio>
+    </main>
+    <footer>
+      <p>Author: <i>Adam Zhou</i></p>
+    </footer>
+    <form>
+      <fieldset>
+        <p>Submit any ideas</p>
+        <label for="ideas">Ideas: </label>
+        <input type="text" id="ideas" /><br />
+        <p>Did you participate today?</p>
+        <input type="radio" id="yes" name="participation" />
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="participation" />
+        <label for="no">No</label>
+        <br />
+        <p>What type of idea is it?</p>
+        <input type="checkbox" id="bug" name="ideas" />
+        <label for="bug">Bug</label>
+        <input type="checkbox" id="feature" name="ideas" />
+        <label for="feature">Feature</label>
+        <input type="checkbox" id="other" name="ideas" />
+        <label for="other">Other</label>
+        <br />
+        <label for="dateSelect">Enter today's date</label><br />
+        <input type="date" id="dateSelect" /><br />
+        <label for="otherComments">Enter any other comments:</label><br />
+        <textarea
+          id="otherComments"
+          name="comments"
+          rows="4"
+          cols="50"
+        ></textarea
+        ><br />
+        <label for="ratings">Choose a rating:</label>
+
+        <select name="ratings" id="ratings">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          </select>
+          <br />
+
+        <label for="nameList">Select your name:</label>
+        <input list="names" name="nameList" id="nameList" />
+        <datalist id="names">
+          <option value="Adam"></option>
+          <option value="Name1"></option>
+          <option value="Name2"></option>
+        </datalist>
+
+        <br />
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
